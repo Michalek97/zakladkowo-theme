@@ -1,0 +1,35 @@
+.hero{
+    padding:120px 0;
+}
+
+.hero__wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.hero__title{
+    font-size:64px;
+    line-height:1.1;
+    margin-bottom:24px;
+}
+
+.hero__description{
+    font-size:20px;
+    margin-bottom:36px;
+}
+
+.hero__buttons{
+    display:flex;
+    gap:20px;
+}
+
+.hero__image img{
+    border-radius:30px;
+}
+
+.features{
+    background:#fff;
+    padding:100px 0;
+}

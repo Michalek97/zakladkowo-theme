@@ -1,3 +1,9 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -15,11 +21,17 @@
 
 <?php wp_body_open(); ?>
 
+<?php get_template_part( 'template-parts/header/top-bar' ); ?>
+
 <header class="site-header">
 
-	<div class="container">
+	<div class="container site-header__inner">
 
-		Header
+		<?php get_template_part( 'template-parts/header/branding' ); ?>
+
+		<?php get_template_part( 'template-parts/header/navigation' ); ?>
+
+		<?php get_template_part( 'template-parts/header/actions' ); ?>
 
 	</div>
 

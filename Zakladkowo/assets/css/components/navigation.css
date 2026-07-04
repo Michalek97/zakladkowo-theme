@@ -1,0 +1,56 @@
+.main-menu{
+
+    display:flex;
+
+    gap:42px;
+
+    align-items:center;
+
+}
+
+.main-menu a{
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.main-menu a:hover{
+
+    color:var(--primary);
+
+}
+.main-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.main-menu li{
+
+    position:relative;
+
+}
+
+.main-menu a{
+
+    display:block;
+
+    padding:10px 0;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.main-menu a:hover{
+
+    color:var(--primary);
+
+}

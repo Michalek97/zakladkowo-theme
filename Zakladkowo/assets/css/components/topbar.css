@@ -1,0 +1,9 @@
+.top-bar{
+    background:var(--primary);
+    color:#fff;
+    font-size:13px;
+    font-weight:500;
+    height:40px;
+    display:flex;
+    align-items:center;
+}

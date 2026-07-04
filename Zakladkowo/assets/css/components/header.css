@@ -1,0 +1,111 @@
+
+/* =====================================
+   SECTION HEADER
+===================================== */
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-header span{
+
+    display:block;
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:14px;
+
+}
+
+.section-header h2{
+
+    font-size:48px;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.site-header{
+
+    background:#fff;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.site-header__inner{
+
+    height:72px;
+
+    display:grid;
+
+    grid-template-columns:auto 1fr auto;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.site-branding{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+.main-navigation{
+
+    justify-self:center;
+
+}
+
+.header-actions{
+
+    display:flex;
+
+    gap:22px;
+
+}
+.custom-logo{
+
+    display:block;
+
+    width:auto;
+
+    height:52px;
+
+}
+
+.custom-logo-link{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.site-branding img{
+
+    width:auto;
+
+    height:52px;
+
+}

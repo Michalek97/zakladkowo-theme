@@ -7,8 +7,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 function zakladkowo_setup() {
 
 	add_theme_support( 'title-tag' );
+
 	add_theme_support( 'post-thumbnails' );
-	add_theme_support( 'woocommerce' );
+
+	add_theme_support( 'custom-logo', array(
+		'height'      => 60,
+		'width'       => 240,
+		'flex-height' => true,
+		'flex-width'  => true,
+	) );
+
+	register_nav_menus( array(
+		'primary' => __( 'Menu główne', 'zakladkowo' ),
+	) );
 
 }
 

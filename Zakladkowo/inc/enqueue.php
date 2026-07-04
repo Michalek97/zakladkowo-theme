@@ -30,16 +30,58 @@ function zakladkowo_enqueue_assets() {
 	);
 
 	wp_enqueue_style(
-		'zakladkowo-components',
-		get_template_directory_uri() . '/assets/css/components.css',
-		array( 'zakladkowo-layout' ),
-		filemtime( get_template_directory() . '/assets/css/components.css' )
-	);
+    'zakladkowo-topbar',
+    get_template_directory_uri() . '/assets/css/components/topbar.css',
+    array( 'zakladkowo-layout' ),
+    filemtime( get_template_directory() . '/assets/css/components/topbar.css' )
+);
+
+wp_enqueue_style(
+    'zakladkowo-header',
+    get_template_directory_uri() . '/assets/css/components/header.css',
+    array( 'zakladkowo-topbar' ),
+    filemtime( get_template_directory() . '/assets/css/components/header.css' )
+);
+
+wp_enqueue_style(
+    'zakladkowo-navigation',
+    get_template_directory_uri() . '/assets/css/components/navigation.css',
+    array( 'zakladkowo-header' ),
+    filemtime( get_template_directory() . '/assets/css/components/navigation.css' )
+);
+
+wp_enqueue_style(
+    'zakladkowo-buttons',
+    get_template_directory_uri() . '/assets/css/components/buttons.css',
+    array( 'zakladkowo-navigation' ),
+    filemtime( get_template_directory() . '/assets/css/components/buttons.css' )
+);
+
+wp_enqueue_style(
+    'zakladkowo-cards',
+    get_template_directory_uri() . '/assets/css/components/cards.css',
+    array( 'zakladkowo-buttons' ),
+    filemtime( get_template_directory() . '/assets/css/components/cards.css' )
+);
+
+wp_enqueue_style(
+    'zakladkowo-forms',
+    get_template_directory_uri() . '/assets/css/components/forms.css',
+    array( 'zakladkowo-cards' ),
+    filemtime( get_template_directory() . '/assets/css/components/forms.css' )
+);
+
+wp_enqueue_style(
+    'zakladkowo-footer',
+    get_template_directory_uri() . '/assets/css/components/footer.css',
+    array( 'zakladkowo-forms' ),
+    filemtime( get_template_directory() . '/assets/css/components/footer.css' )
+);
 
 	wp_enqueue_style(
 		'zakladkowo-woocommerce',
 		get_template_directory_uri() . '/assets/css/woocommerce.css',
-		array( 'zakladkowo-home' ),
+		array( 'zakladkowo-components' ),
 		filemtime( get_template_directory() . '/assets/css/woocommerce.css' )
 	);
 
